@@ -5,7 +5,9 @@ for _ in range(n):
     word_list.append(s)
 for word in word_list:
     if(len(word)>10):
-        i=str(i[0:1])+str((len(word)-2))+str([(len(word)):])
-        print(word)
+        a=str(word[0:1])
+        b=str((len(word))-2)
+        c=str(word[-1])
+        print(a+b+c)
     else:
         print(word)
