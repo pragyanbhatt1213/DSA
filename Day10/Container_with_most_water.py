@@ -4,7 +4,7 @@ class Solution:
         left=0
         right=len(height)-1
         while(left<right):
-            curr_area=min(height[left], height[right])*(right-left)
+            curr_area=min(height[left], height[right])*(right-left)#Area nikal rhe
             if(curr_area>max_area):
                 max_area=curr_area
 
@@ -12,5 +12,5 @@ class Solution:
                 left+=1
             else:
                 right-=1
-           
+    
         return(max_area)
