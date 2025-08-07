@@ -2,12 +2,23 @@ from typing import List
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         freq={}
+        heap=[]
         for i in nums:
             if(i in freq):
                 freq[i]+=1
             else:
                 freq[i]=1
-        print(freq)
+        for n,f in freq.items():
+            heapq.heappush(heap,(f,n))
+            if len(heap) > k:
+                heapq.heappop(heap)
+        result=[]
+        for i in range(k):
+            a=heapq.heappop(heap)
+            result.append(a[1])
+        return(result[::-1])
+        
+
             
 
 sol = Solution()
