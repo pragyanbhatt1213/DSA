@@ -1,2 +1,3 @@
 a,b=map(int, input().split())
-print(a,b)
+area=a*b
+print(area//2)
