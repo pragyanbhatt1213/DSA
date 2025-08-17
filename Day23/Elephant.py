@@ -1,0 +1,10 @@
+n=int(input())
+step=0
+if(n>=5):
+    step=n//5
+    n=n%5
+    if(n>0):
+        step+=1
+else:
+    step=1
+print(step)
