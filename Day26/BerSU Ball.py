@@ -12,7 +12,7 @@ while(b<n and g<m):
         pair+=1
         b+=1
         g+=1
-    elif(boys[b]>girls[g]):
+    elif(boys[b]>girls[g]):#girls level is too low (as sorted list hai aage badhna padega)
         g+=1
     else:
         b+=1
